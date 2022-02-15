@@ -1,10 +1,10 @@
 {
-      "name": "ohmyfood",
+      "name": "writing-sass",
       "version": "1.0.0",
-      "description": "Projet 3 ohmyfood",
+      "description": "Joe Blow's portfolio",
       "main": "index.js",
       "scripts": {
-            "sass": "sass --watch ./sass/main.scss:.public/css/style.css"
+            "sass": "sass --watch ./sass/main.scss:public/css/style.css"
       },
       "repository": {
             "type": "git",

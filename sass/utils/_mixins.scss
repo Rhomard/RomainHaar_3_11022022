@@ -22,6 +22,9 @@
 }
 
 @mixin button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       color: $colour-black;
       background: $colour-white;
       font-weight: 500;
@@ -31,9 +34,29 @@
       border-radius: 20px;
       border: none;
       box-shadow: 5px 5px 50px #999;
+      margin-left: 10px;
       &:hover {
             background: $colour-primary;
             color: $colour-accent;
+      }
+      i {
+            position: absolute;
+            left: 18%;
+            font-size: 20px;
+      }
+      &__number {
+            background-color: $colour-primary;
+            color: $colour-white;
+            font-weight: 500;
+            border-radius: 20px;
+            position: absolute;
+            left: 5%;
+            width: 25px;
+            height: 25px;
+            vertical-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
       }
 }
 
@@ -42,9 +65,12 @@
       display: flex;
       flex-direction: column;
       border-radius: 20px 20px 20px 20px;
+      overflow: hidden;
+      margin: 25px 0px 0px 0px;
       img {
             object-fit: cover;
-            width: 100%;
+            width: 120%;
+            height: 120%;
             height: 175px;
             border-radius: 20px 20px 0px 0px;
       }
@@ -63,6 +89,10 @@
             margin-bottom: 10px;
       }
       &__localisation {
-            font-size: 1.9rem;
+            font-size: 1.5rem;
+            font-weight: 200;
+      }
+      i {
+            font-size: 2.5rem;
       }
 }

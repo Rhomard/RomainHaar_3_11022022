@@ -7,7 +7,7 @@
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
             <link
-                  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+                  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
                   rel="stylesheet"
             />
             <link rel="stylesheet" href="./public/css/style.css" />
@@ -22,7 +22,7 @@
 
             <main>
                   <div class="localisation">
-                        <div class="localisation__pin"><i class="fas fa-star"></i></div>
+                        <div class="localisation__pin"><i class="fa-solid fa-location-dot"></i></div>
                         <div class="localisation__texte"><p>Paris, Belleville</p></div>
                   </div>
 
@@ -35,9 +35,15 @@
                   <section class="fonctionnement">
                         <h2>Fonctionnement</h2>
                         <div class="fonctionnement__buttons">
-                              <button class="button"><i class="fas fa-star"></i>Choisissez un restaurant</button>
-                              <button class="button">Composez votre menu</button>
-                              <button class="button">Dégustez au restaurant</button>
+                              <button class="button">
+                                    <span class="button__number">1</span><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant
+                              </button>
+                              <button class="button">
+                                    <span class="button__number">2</span><i class="fa-solid fa-list-ul"></i>Composez votre menu
+                              </button>
+                              <button class="button">
+                                    <span class="button__number">3</span><i class="fa-solid fa-store"></i>Dégustez au restaurant
+                              </button>
                         </div>
                   </section>
 
@@ -46,7 +52,7 @@
 
                         <div class="restaurants__cards">
                               <div class="card">
-                                    <a href="palette.html">
+                                    <a href="la-palette-du-gout.html">
                                           <div class="card__image"><img src="public/img/palette.jpg" alt="Photo de la Palette du goût" /></div>
 
                                           <div class="card__body">
@@ -61,7 +67,70 @@
                                                 </div>
 
                                                 <div class="card__favoris">
-                                                      <i class="fa-light fa-heart"></i>
+                                                      <i class="fa-regular fa-heart"></i>
+                                                </div>
+                                          </div>
+                                    </a>
+                              </div>
+                              <div class="card">
+                                    <a href="la-note-enchantee.html">
+                                          <div class="card__image"><img src="public/img/note.jpg" alt="Photo de la Palette du goût" /></div>
+
+                                          <div class="card__body">
+                                                <div class="card__bodytext">
+                                                      <div class="card__title">
+                                                            <p>La note enchantée</p>
+                                                      </div>
+
+                                                      <div class="card__localisation">
+                                                            <p>Charonne</p>
+                                                      </div>
+                                                </div>
+
+                                                <div class="card__favoris">
+                                                      <i class="fa-regular fa-heart"></i>
+                                                </div>
+                                          </div>
+                                    </a>
+                              </div>
+                              <div class="card">
+                                    <a href="a-la-francaise.html">
+                                          <div class="card__image"><img src="public/img/francaise.jpg" alt="Photo de la Palette du goût" /></div>
+
+                                          <div class="card__body">
+                                                <div class="card__bodytext">
+                                                      <div class="card__title">
+                                                            <p>À la française</p>
+                                                      </div>
+
+                                                      <div class="card__localisation">
+                                                            <p>Cité Rouge</p>
+                                                      </div>
+                                                </div>
+
+                                                <div class="card__favoris">
+                                                      <i class="fa-regular fa-heart"></i>
+                                                </div>
+                                          </div>
+                                    </a>
+                              </div>
+                              <div class="card">
+                                    <a href="le-delice-des-sens.html">
+                                          <div class="card__image"><img src="public/img/delice.jpg" alt="Photo de la Palette du goût" /></div>
+
+                                          <div class="card__body">
+                                                <div class="card__bodytext">
+                                                      <div class="card__title">
+                                                            <p>Le délice des sens</p>
+                                                      </div>
+
+                                                      <div class="card__localisation">
+                                                            <p>Folie-Méricourt</p>
+                                                      </div>
+                                                </div>
+
+                                                <div class="card__favoris">
+                                                      <i class="fa-regular fa-heart"></i>
                                                 </div>
                                           </div>
                                     </a>
@@ -69,5 +138,20 @@
                         </div>
                   </section>
             </main>
+
+            <footer>
+                  <p>ohmyfood</p>
+
+                  <ul>
+                        <li>
+                              <a href="index.html"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
+                        </li>
+                        <li>
+                              <a href="index.html"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
+                        </li>
+                        <li><a href="index.html">Mentions légales</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                  </ul>
+            </footer>
       </body>
 </html>

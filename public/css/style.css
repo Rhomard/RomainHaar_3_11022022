@@ -18,8 +18,8 @@ body {
 body {
   font-family: "Roboto", sans-serif;
   color: black;
-  font-size: 2rem;
-  font-weight: 100;
+  font-size: 1.7rem;
+  font-weight: 400;
   line-height: 1;
 }
 
@@ -42,7 +42,21 @@ button {
   font-size: 2rem;
 }
 
+footer {
+  color: #fff;
+}
+footer a {
+  color: #fff;
+}
+footer p {
+  font-family: "Shrikhand", cursive;
+  font-size: 2rem;
+}
+
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: black;
   background: #fff;
   font-weight: 500;
@@ -52,10 +66,30 @@ button {
   border-radius: 20px;
   border: none;
   box-shadow: 5px 5px 50px #999;
+  margin-left: 10px;
 }
 .button:hover {
   background: #9356dc;
   color: #d6fff5;
+}
+.button i {
+  position: absolute;
+  left: 18%;
+  font-size: 20px;
+}
+.button__number {
+  background-color: #9356dc;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 20px;
+  position: absolute;
+  left: 5%;
+  width: 25px;
+  height: 25px;
+  vertical-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -63,10 +97,13 @@ button {
   display: flex;
   flex-direction: column;
   border-radius: 20px 20px 20px 20px;
+  overflow: hidden;
+  margin: 25px 0px 0px 0px;
 }
 .card img {
   object-fit: cover;
-  width: 100%;
+  width: 120%;
+  height: 120%;
   height: 175px;
   border-radius: 20px 20px 0px 0px;
 }
@@ -85,7 +122,11 @@ button {
   margin-bottom: 10px;
 }
 .card__localisation {
-  font-size: 1.9rem;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+.card i {
+  font-size: 2.5rem;
 }
 
 .header {
@@ -100,7 +141,7 @@ button {
 .header__logo {
   display: flex;
   align-items: center;
-  width: 200px;
+  width: 175px;
   margin-top: 10px;
 }
 
@@ -187,11 +228,12 @@ button {
   width: 100%;
 }
 .localisation__pin {
-  width: 50px;
-  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.localisation p {
+  padding-left: 10px;
 }
 
 .slogan {
@@ -206,6 +248,7 @@ button {
 .slogan p {
   text-align: center;
   font-size: 1.9rem;
+  font-weight: 200;
 }
 .slogan__button {
   color: #fff;
@@ -234,8 +277,25 @@ button {
   background-color: #d8dfe3;
   padding: 30px 20px 30px 20px;
 }
-.restaurants__cards {
-  padding: 25px 0px 25px 0px;
+
+footer {
+  padding: 30px 20px 30px 20px;
+  background-color: black;
+}
+footer ul {
+  list-style: none;
+}
+footer a {
+  text-decoration: none;
+}
+footer li {
+  padding-bottom: 10px;
+}
+footer i {
+  width: 30px;
+}
+footer p {
+  padding-bottom: 30px;
 }
 
 .about {
@@ -275,6 +335,9 @@ button {
   margin-bottom: 3.375rem;
 }
 .about__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: black;
   background: #fff;
   font-weight: 500;
@@ -284,11 +347,31 @@ button {
   border-radius: 20px;
   border: none;
   box-shadow: 5px 5px 50px #999;
+  margin-left: 10px;
   grid-area: btn;
 }
 .about__btn:hover {
   background: #9356dc;
   color: #d6fff5;
+}
+.about__btn i {
+  position: absolute;
+  left: 18%;
+  font-size: 20px;
+}
+.about__btn__number {
+  background-color: #9356dc;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 20px;
+  position: absolute;
+  left: 5%;
+  width: 25px;
+  height: 25px;
+  vertical-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .about__btn a {
   text-decoration: none;
@@ -341,6 +424,9 @@ button {
   font-style: italic;
 }
 .project__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: black;
   background: #fff;
   font-weight: 500;
@@ -350,11 +436,31 @@ button {
   border-radius: 20px;
   border: none;
   box-shadow: 5px 5px 50px #999;
+  margin-left: 10px;
   grid-area: btn;
 }
 .project__btn:hover {
   background: #9356dc;
   color: #d6fff5;
+}
+.project__btn i {
+  position: absolute;
+  left: 18%;
+  font-size: 20px;
+}
+.project__btn__number {
+  background-color: #9356dc;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 20px;
+  position: absolute;
+  left: 5%;
+  width: 25px;
+  height: 25px;
+  vertical-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

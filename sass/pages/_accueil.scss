@@ -7,11 +7,12 @@
       flex-wrap: wrap;
       width: 100%;
       &__pin {
-            width: 50px;
-            height: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
+      }
+      p {
+            padding-left: 10px;
       }
 }
 
@@ -27,6 +28,7 @@
       p {
             text-align: center;
             font-size: 1.9rem;
+            font-weight: 200;
       }
       &__button {
             color: $colour-white;
@@ -55,7 +57,24 @@
 .restaurants {
       background-color: $colour-lightgrey;
       padding: 30px 20px 30px 20px;
-      &__cards {
-            padding: 25px 0px 25px 0px;
+}
+
+footer {
+      padding: 30px 20px 30px 20px;
+      background-color: $colour-black;
+      ul {
+            list-style: none;
+      }
+      a {
+            text-decoration: none;
+      }
+      li {
+            padding-bottom: 10px;
+      }
+      i {
+            width: 30px;
+      }
+      p {
+            padding-bottom: 30px;
       }
 }

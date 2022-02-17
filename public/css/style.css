@@ -54,79 +54,74 @@ footer p {
 }
 
 .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  background: #fff;
-  font-weight: 500;
-  font-size: 1.6rem;
-  cursor: pointer;
-  height: 75px;
-  border-radius: 20px;
+  color: #f6f6f6;
+  background: linear-gradient(#ff79da, #9356dc);
+  border-radius: 100px;
+  height: 50px;
   border: none;
-  box-shadow: 5px 5px 50px #999;
-  margin-left: 10px;
+  width: 225px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 1.7rem;
 }
-.button:hover {
-  background: #9356dc;
-  color: #d6fff5;
-}
-.button i {
-  position: absolute;
-  left: 18%;
-  font-size: 20px;
-}
-.button__number {
-  background-color: #9356dc;
-  color: #fff;
-  font-weight: 500;
-  border-radius: 20px;
-  position: absolute;
-  left: 5%;
-  width: 25px;
-  height: 25px;
-  vertical-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.button:hover,
+.button :active {
+  background: linear-gradient(#9356dc, #ff79da);
+  color: black;
+  transform: scale(1.1);
+  transition: 0.8s;
 }
 
 .card {
   background-color: #fff;
-  display: flex;
-  flex-direction: column;
   border-radius: 20px 20px 20px 20px;
-  overflow: hidden;
   margin: 25px 0px 0px 0px;
+  box-shadow: 0px 10px 10px #eaeaea;
+  position: relative;
+  height: 265px;
+  overflow: hidden;
 }
 .card img {
   object-fit: cover;
-  width: 120%;
-  height: 120%;
-  height: 175px;
+  position: absolute;
+  top: -60px;
+  height: 250px;
+  width: 100%;
   border-radius: 20px 20px 0px 0px;
 }
-.card a {
-  text-decoration: none;
-  color: black;
-}
 .card__body {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin: 15px 20px 15px 20px;
 }
 .card__title {
+  position: absolute;
+  bottom: 30px;
   font-weight: 500;
   margin-bottom: 10px;
 }
 .card__localisation {
+  position: absolute;
+  bottom: 15px;
   font-size: 1.5rem;
   font-weight: 200;
 }
+.card__favoris {
+  position: absolute;
+  bottom: 25px;
+  right: 30px;
+}
 .card i {
   font-size: 2.5rem;
+}
+.card--new {
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  right: 15px;
+  border-radius: 3px;
+  background-color: #99e2d0;
+  color: #008c66;
+  font-size: 1.5rem;
+  padding: 8px 10px;
 }
 
 .header {
@@ -137,6 +132,7 @@ footer p {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+  box-shadow: 0px 20px 5px black;
 }
 .header__logo {
   display: flex;
@@ -219,7 +215,7 @@ footer p {
 }
 
 .localisation {
-  background: #d3d3d3;
+  background: #eaeaea;
   height: 50px;
   display: flex;
   justify-content: center;
@@ -237,7 +233,7 @@ footer p {
 }
 
 .slogan {
-  background-color: #d8dfe3;
+  background-color: #f6f6f6;
   padding: 30px 20px 30px 20px;
   height: 250px;
   display: flex;
@@ -250,37 +246,72 @@ footer p {
   font-size: 1.9rem;
   font-weight: 200;
 }
-.slogan__button {
-  color: #fff;
-  background-color: #ff79da;
-  border-radius: 100px;
-  height: 50px;
-  border: none;
-  width: 225px;
-  cursor: pointer;
-  font-weight: 400;
-  font-size: 1.7rem;
-}
 
 .fonctionnement {
-  padding: 30px 20px 30px 20px;
+  padding: 30px 25px 30px 25px;
 }
-.fonctionnement__buttons {
-  height: 300px;
+.fonctionnement__steps {
+  height: 325px;
   padding: 25px 0px 25px 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.steps {
+  display: flex;
+  align-items: center;
+  color: black;
+  background: #f6f6f6;
+  font-weight: 500;
+  font-size: 1.6rem;
+  cursor: pointer;
+  height: 75px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 10px 10px #eaeaea;
+  margin-left: 10px;
+  width: 315px;
+}
+.steps:hover {
+  background: #f8ebff;
+  color: #9356dc;
+}
+.steps i {
+  display: flex;
+  justify-content: center;
+  color: #535353;
+  font-size: 20px;
+  width: 80px;
+  padding-left: 15px;
+}
+.steps__number {
+  background-color: #9356dc;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 20px;
+  position: absolute;
+  left: 25px;
+  width: 25px;
+  height: 25px;
+  vertical-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .restaurants {
-  background-color: #d8dfe3;
+  background-color: #f6f6f6;
   padding: 30px 20px 30px 20px;
+}
+.restaurants__cards a {
+  text-decoration: none;
+  color: black;
 }
 
 footer {
   padding: 30px 20px 30px 20px;
-  background-color: black;
+  background-color: #535353;
 }
 footer ul {
   list-style: none;
@@ -335,43 +366,23 @@ footer p {
   margin-bottom: 3.375rem;
 }
 .about__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  background: #fff;
-  font-weight: 500;
-  font-size: 1.6rem;
-  cursor: pointer;
-  height: 75px;
-  border-radius: 20px;
+  color: #f6f6f6;
+  background: linear-gradient(#ff79da, #9356dc);
+  border-radius: 100px;
+  height: 50px;
   border: none;
-  box-shadow: 5px 5px 50px #999;
-  margin-left: 10px;
+  width: 225px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 1.7rem;
   grid-area: btn;
 }
-.about__btn:hover {
-  background: #9356dc;
-  color: #d6fff5;
-}
-.about__btn i {
-  position: absolute;
-  left: 18%;
-  font-size: 20px;
-}
-.about__btn__number {
-  background-color: #9356dc;
-  color: #fff;
-  font-weight: 500;
-  border-radius: 20px;
-  position: absolute;
-  left: 5%;
-  width: 25px;
-  height: 25px;
-  vertical-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.about__btn:hover,
+.about__btn :active {
+  background: linear-gradient(#9356dc, #ff79da);
+  color: black;
+  transform: scale(1.1);
+  transition: 0.8s;
 }
 .about__btn a {
   text-decoration: none;
@@ -424,43 +435,23 @@ footer p {
   font-style: italic;
 }
 .project__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  background: #fff;
-  font-weight: 500;
-  font-size: 1.6rem;
-  cursor: pointer;
-  height: 75px;
-  border-radius: 20px;
+  color: #f6f6f6;
+  background: linear-gradient(#ff79da, #9356dc);
+  border-radius: 100px;
+  height: 50px;
   border: none;
-  box-shadow: 5px 5px 50px #999;
-  margin-left: 10px;
+  width: 225px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 1.7rem;
   grid-area: btn;
 }
-.project__btn:hover {
-  background: #9356dc;
-  color: #d6fff5;
-}
-.project__btn i {
-  position: absolute;
-  left: 18%;
-  font-size: 20px;
-}
-.project__btn__number {
-  background-color: #9356dc;
-  color: #fff;
-  font-weight: 500;
-  border-radius: 20px;
-  position: absolute;
-  left: 5%;
-  width: 25px;
-  height: 25px;
-  vertical-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.project__btn:hover,
+.project__btn :active {
+  background: linear-gradient(#9356dc, #ff79da);
+  color: black;
+  transform: scale(1.1);
+  transition: 0.8s;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,74 @@
+@mixin button {
+      color: $colour-lightgrey;
+      background: linear-gradient($colour-secondary, $colour-primary);
+      border-radius: 100px;
+      height: 50px;
+      border: none;
+      width: 225px;
+      cursor: pointer;
+      font-weight: 400;
+      font-size: 1.7rem;
+      &:hover,
+      :active {
+            background: linear-gradient($colour-primary, $colour-secondary);
+            color: $colour-black;
+            transform: scale(1.1);
+            transition: 0.8s;
+      }
+}
+
+@mixin card {
+      background-color: $colour-white;
+      border-radius: 20px 20px 20px 20px;
+      margin: 25px 0px 0px 0px;
+      box-shadow: $shadow;
+      position: relative;
+      height: 265px;
+      overflow: hidden;
+      img {
+            object-fit: cover;
+            position: absolute;
+            top: -60px;
+            height: 250px;
+            width: 100%;
+            border-radius: 20px 20px 0px 0px;
+      }
+      &__body {
+            margin: 15px 20px 15px 20px;
+      }
+      &__title {
+            position: absolute;
+            bottom: 30px;
+            font-weight: 500;
+            margin-bottom: 10px;
+      }
+      &__localisation {
+            position: absolute;
+            bottom: 15px;
+            font-size: 1.5rem;
+            font-weight: 200;
+      }
+      &__favoris {
+            position: absolute;
+            bottom: 25px;
+            right: 30px;
+      }
+      i {
+            font-size: 2.5rem;
+      }
+      &--new {
+            position: absolute;
+            z-index: 1;
+            top: 15px;
+            right: 15px;
+            border-radius: 3px;
+            background-color: $colour-ter;
+            color: #008c66;
+            font-size: 1.5rem;
+            padding: 8px 10px;
+      }
+}
+
 @mixin heading-shadow($colour: lightness-shift($colour-primary), $offset: $heading-shadow-size) {
       text-shadow: $offset $offset $colour;
 }
@@ -18,81 +89,5 @@
             left: 50%;
             width: 100%;
             transform: translate(-50%, -50%);
-      }
-}
-
-@mixin button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: $colour-black;
-      background: $colour-white;
-      font-weight: 500;
-      font-size: 1.6rem;
-      cursor: pointer;
-      height: 75px;
-      border-radius: 20px;
-      border: none;
-      box-shadow: 5px 5px 50px #999;
-      margin-left: 10px;
-      &:hover {
-            background: $colour-primary;
-            color: $colour-accent;
-      }
-      i {
-            position: absolute;
-            left: 18%;
-            font-size: 20px;
-      }
-      &__number {
-            background-color: $colour-primary;
-            color: $colour-white;
-            font-weight: 500;
-            border-radius: 20px;
-            position: absolute;
-            left: 5%;
-            width: 25px;
-            height: 25px;
-            vertical-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-      }
-}
-
-@mixin card {
-      background-color: $colour-white;
-      display: flex;
-      flex-direction: column;
-      border-radius: 20px 20px 20px 20px;
-      overflow: hidden;
-      margin: 25px 0px 0px 0px;
-      img {
-            object-fit: cover;
-            width: 120%;
-            height: 120%;
-            height: 175px;
-            border-radius: 20px 20px 0px 0px;
-      }
-      a {
-            text-decoration: none;
-            color: $colour-black;
-      }
-      &__body {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 15px 20px 15px 20px;
-      }
-      &__title {
-            font-weight: 500;
-            margin-bottom: 10px;
-      }
-      &__localisation {
-            font-size: 1.5rem;
-            font-weight: 200;
-      }
-      i {
-            font-size: 2.5rem;
       }
 }

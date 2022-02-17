@@ -12,22 +12,22 @@ html {
 
 body {
   box-sizing: border-box;
-  background: #ff79da;
+  background: #fff;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #9356dc;
+  color: black;
   font-size: 2rem;
   font-weight: 100;
-  line-height: 1.7;
+  line-height: 1;
 }
 
 h1 {
   font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-size: 5rem;
-  font-style: italic;
+  font-weight: 500;
+  font-size: 3rem;
+  text-align: center;
 }
 
 textarea {
@@ -39,24 +39,53 @@ textarea {
 button {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-style: italic;
-  font-size: 2.75rem;
+  font-size: 2rem;
 }
 
-.btn {
-  padding: 1.5rem;
-  border: 0.1rem solid #9356dc;
-  color: #9356dc;
-  background: #ff79da;
+.button {
+  color: black;
+  background: #fff;
+  font-weight: 500;
+  font-size: 1.6rem;
   cursor: pointer;
+  height: 75px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 5px 5px 50px #999;
 }
-.btn:hover {
+.button:hover {
   background: #9356dc;
   color: #d6fff5;
 }
-.btn--full-width {
+
+.card {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px 20px 20px 20px;
+}
+.card img {
+  object-fit: cover;
   width: 100%;
-  margin: 0 auto;
+  height: 175px;
+  border-radius: 20px 20px 0px 0px;
+}
+.card a {
+  text-decoration: none;
+  color: black;
+}
+.card__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 20px 15px 20px;
+}
+.card__title {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.card__localisation {
+  font-size: 1.9rem;
 }
 
 .header {
@@ -148,62 +177,65 @@ button {
   margin-bottom: 0.75rem;
 }
 
-.quote {
-  text-align: right;
-  font-size: 6rem;
-  font-weight: 900;
-  font-style: italic;
-  color: #d6fff5;
-  margin: 2rem 6rem -3rem 6rem;
+.localisation {
+  background: #d3d3d3;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
-.quote strong {
-  color: #9356dc;
+.localisation__pin {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.proj-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 1.5rem;
+.slogan {
+  background-color: #d8dfe3;
+  padding: 30px 20px 30px 20px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.proj-prev {
+.slogan p {
+  text-align: center;
+  font-size: 1.9rem;
+}
+.slogan__button {
   color: #fff;
-  margin-bottom: 1.5rem;
-}
-.proj-prev__image {
-  margin: 0;
-  opacity: 0.2;
-  width: 100%;
-  display: block;
-  overflow: hidden;
-  padding-top: 56.25%;
-  position: relative;
-}
-.proj-prev__image img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  transform: translate(-50%, -50%);
-}
-.proj-prev__heading {
-  font-size: 4rem;
-  padding-left: 2.5rem;
-  margin: 0;
-  line-height: 6rem;
-}
-.proj-prev__byline {
-  padding-left: 2.5rem;
-  font-size: 1.66rem;
-}
-.proj-prev:hover {
+  background-color: #ff79da;
+  border-radius: 100px;
+  height: 50px;
+  border: none;
+  width: 225px;
   cursor: pointer;
+  font-weight: 400;
+  font-size: 1.7rem;
 }
-.proj-prev:hover > .proj-prev__heading {
-  background: #9356dc;
+
+.fonctionnement {
+  padding: 30px 20px 30px 20px;
 }
-.proj-prev:hover > .proj-prev__image {
-  opacity: 1;
+.fonctionnement__buttons {
+  height: 300px;
+  padding: 25px 0px 25px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.restaurants {
+  background-color: #d8dfe3;
+  padding: 30px 20px 30px 20px;
+}
+.restaurants__cards {
+  padding: 25px 0px 25px 0px;
 }
 
 .about {
@@ -243,20 +275,20 @@ button {
   margin-bottom: 3.375rem;
 }
 .about__btn {
-  padding: 1.5rem;
-  border: 0.1rem solid #9356dc;
-  color: #9356dc;
-  background: #ff79da;
+  color: black;
+  background: #fff;
+  font-weight: 500;
+  font-size: 1.6rem;
   cursor: pointer;
+  height: 75px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 5px 5px 50px #999;
   grid-area: btn;
 }
 .about__btn:hover {
   background: #9356dc;
   color: #d6fff5;
-}
-.about__btn--full-width {
-  width: 100%;
-  margin: 0 auto;
 }
 .about__btn a {
   text-decoration: none;
@@ -309,20 +341,20 @@ button {
   font-style: italic;
 }
 .project__btn {
-  padding: 1.5rem;
-  border: 0.1rem solid #9356dc;
-  color: #9356dc;
-  background: #ff79da;
+  color: black;
+  background: #fff;
+  font-weight: 500;
+  font-size: 1.6rem;
   cursor: pointer;
+  height: 75px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 5px 5px 50px #999;
   grid-area: btn;
 }
 .project__btn:hover {
   background: #9356dc;
   color: #d6fff5;
-}
-.project__btn--full-width {
-  width: 100%;
-  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

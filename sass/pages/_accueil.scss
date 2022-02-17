@@ -1,0 +1,61 @@
+.localisation {
+      background: $colour-grey;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      &__pin {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+      }
+}
+
+.slogan {
+      background-color: $colour-lightgrey;
+      padding: 30px 20px 30px 20px;
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+            text-align: center;
+            font-size: 1.9rem;
+      }
+      &__button {
+            color: $colour-white;
+            background-color: $colour-secondary;
+            border-radius: 100px;
+            height: 50px;
+            border: none;
+            width: 225px;
+            cursor: pointer;
+            font-weight: 400;
+            font-size: 1.7rem;
+      }
+}
+
+.fonctionnement {
+      padding: 30px 20px 30px 20px;
+      &__buttons {
+            height: 300px;
+            padding: 25px 0px 25px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+      }
+}
+
+.restaurants {
+      background-color: $colour-lightgrey;
+      padding: 30px 20px 30px 20px;
+      &__cards {
+            padding: 25px 0px 25px 0px;
+      }
+}

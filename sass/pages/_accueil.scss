@@ -18,7 +18,7 @@
 
 .slogan {
       background-color: $colour-lightgrey;
-      padding: 30px 20px 30px 20px;
+      padding: 30px 25px 30px 25px;
       height: 250px;
       display: flex;
       flex-direction: column;
@@ -44,30 +44,35 @@
 }
 
 .steps {
-      display: flex;
-      align-items: center;
       color: $colour-black;
       background: $colour-lightgrey;
+      position: relative;
+      text-align: center;
       font-weight: 500;
       font-size: 1.6rem;
-      cursor: pointer;
       height: 75px;
       border-radius: 20px;
       border: none;
       box-shadow: $shadow;
-      margin-left: 10px;
-      width: 315px;
-      &:hover {
-            background: $colour-button-hover;
-            color: $colour-primary;
+      margin: auto;
+      width: 310px;
+      &__txt {
+            position: absolute; /* postulat de départ */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
       }
       i {
-            display: flex;
-            justify-content: center;
-            color: $colour-darkgrey;
+            display: inline;
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translate(-50%, -50%);
+            color: $colour-icongrey;
             font-size: 20px;
             width: 80px;
-            padding-left: 15px;
+            padding-left: 10px;
       }
       &__number {
             background-color: $colour-primary;
@@ -75,19 +80,26 @@
             font-weight: 500;
             border-radius: 20px;
             position: absolute;
-            left: 25px;
+            top: 50%;
+            left: -1%;
+            transform: translate(-50%, -50%);
             width: 25px;
             height: 25px;
-            vertical-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
+      }
+      &--iconpurple {
+            background-color: $colour-step-purple;
+            i {
+                  color: $colour-primary;
+            }
       }
 }
 
 .restaurants {
       background-color: $colour-lightgrey;
-      padding: 30px 20px 30px 20px;
+      padding: 40px 25px 40px 25px;
       &__cards a {
             text-decoration: none;
             color: $colour-black;

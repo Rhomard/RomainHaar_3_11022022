@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -64,8 +65,7 @@ footer p {
   font-weight: 400;
   font-size: 1.7rem;
 }
-.button:hover,
-.button :active {
+.button:hover {
   background: linear-gradient(#9356dc, #ff79da);
   color: black;
   transform: scale(1.1);
@@ -94,6 +94,7 @@ footer p {
 }
 .card__title {
   position: absolute;
+  font-size: 1.8rem;
   bottom: 30px;
   font-weight: 500;
   margin-bottom: 10px;
@@ -101,8 +102,8 @@ footer p {
 .card__localisation {
   position: absolute;
   bottom: 15px;
-  font-size: 1.5rem;
-  font-weight: 200;
+  font-size: 1.7rem;
+  font-weight: 300;
 }
 .card__favoris {
   position: absolute;
@@ -234,7 +235,7 @@ footer p {
 
 .slogan {
   background-color: #f6f6f6;
-  padding: 30px 20px 30px 20px;
+  padding: 30px 25px 30px 25px;
   height: 250px;
   display: flex;
   flex-direction: column;
@@ -259,31 +260,37 @@ footer p {
 }
 
 .steps {
-  display: flex;
-  align-items: center;
   color: black;
   background: #f6f6f6;
+  position: relative;
+  text-align: center;
   font-weight: 500;
   font-size: 1.6rem;
-  cursor: pointer;
   height: 75px;
   border-radius: 20px;
   border: none;
   box-shadow: 0px 10px 10px #eaeaea;
-  margin-left: 10px;
-  width: 315px;
+  margin: auto;
+  width: 310px;
 }
-.steps:hover {
-  background: #f8ebff;
-  color: #9356dc;
+.steps__txt {
+  position: absolute;
+  /* postulat de départ */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
 .steps i {
-  display: flex;
-  justify-content: center;
-  color: #535353;
+  display: inline;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  color: #969696;
   font-size: 20px;
   width: 80px;
-  padding-left: 15px;
+  padding-left: 10px;
 }
 .steps__number {
   background-color: #9356dc;
@@ -291,18 +298,25 @@ footer p {
   font-weight: 500;
   border-radius: 20px;
   position: absolute;
-  left: 25px;
+  top: 50%;
+  left: -1%;
+  transform: translate(-50%, -50%);
   width: 25px;
   height: 25px;
-  vertical-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.steps--iconpurple {
+  background-color: #f8ebff;
+}
+.steps--iconpurple i {
+  color: #9356dc;
+}
 
 .restaurants {
   background-color: #f6f6f6;
-  padding: 30px 20px 30px 20px;
+  padding: 40px 25px 40px 25px;
 }
 .restaurants__cards a {
   text-decoration: none;
@@ -377,8 +391,7 @@ footer p {
   font-size: 1.7rem;
   grid-area: btn;
 }
-.about__btn:hover,
-.about__btn :active {
+.about__btn:hover {
   background: linear-gradient(#9356dc, #ff79da);
   color: black;
   transform: scale(1.1);
@@ -446,8 +459,7 @@ footer p {
   font-size: 1.7rem;
   grid-area: btn;
 }
-.project__btn:hover,
-.project__btn :active {
+.project__btn:hover {
   background: linear-gradient(#9356dc, #ff79da);
   color: black;
   transform: scale(1.1);

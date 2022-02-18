@@ -8,8 +8,7 @@
       cursor: pointer;
       font-weight: 400;
       font-size: 1.7rem;
-      &:hover,
-      :active {
+      &:hover {
             background: linear-gradient($colour-primary, $colour-secondary);
             color: $colour-black;
             transform: scale(1.1);
@@ -38,6 +37,7 @@
       }
       &__title {
             position: absolute;
+            font-size: 1.8rem;
             bottom: 30px;
             font-weight: 500;
             margin-bottom: 10px;
@@ -45,8 +45,8 @@
       &__localisation {
             position: absolute;
             bottom: 15px;
-            font-size: 1.5rem;
-            font-weight: 200;
+            font-size: 1.7rem;
+            font-weight: 300;
       }
       &__favoris {
             position: absolute;

@@ -1,0 +1,19 @@
+footer {
+      padding: 30px 20px 30px 20px;
+      background-color: $colour-darkgrey;
+      ul {
+            list-style: none;
+      }
+      a {
+            text-decoration: none;
+      }
+      li {
+            padding-bottom: 10px;
+      }
+      i {
+            width: 30px;
+      }
+      p {
+            padding-bottom: 30px;
+      }
+}

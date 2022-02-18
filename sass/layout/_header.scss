@@ -13,4 +13,10 @@
             width: 175px;
             margin-top: 10px;
       }
+      &__arrow {
+            position: absolute;
+            font-size: 2rem;
+            left: 5%;
+            color: $colour-black;
+      }
 }

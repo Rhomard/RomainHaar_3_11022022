@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -16,6 +15,10 @@ body {
   background: #fff;
 }
 
+section {
+  padding: 50px 25px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: black;
@@ -27,7 +30,7 @@ body {
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 3rem;
+  font-size: 2.8rem;
   text-align: center;
 }
 
@@ -64,6 +67,7 @@ footer p {
   cursor: pointer;
   font-weight: 400;
   font-size: 1.7rem;
+  box-shadow: 0px 10px 10px #bebebe;
 }
 .button:hover {
   background: linear-gradient(#9356dc, #ff79da);
@@ -80,6 +84,10 @@ footer p {
   position: relative;
   height: 265px;
   overflow: hidden;
+}
+.card:hover {
+  transform: scale(0.98);
+  transition: 0.3s;
 }
 .card img {
   object-fit: cover;
@@ -217,6 +225,7 @@ footer p {
 
 .localisation {
   background: #eaeaea;
+  box-shadow: inset 0px 2px 5px #bebebe;
   height: 50px;
   display: flex;
   justify-content: center;
@@ -235,8 +244,7 @@ footer p {
 
 .slogan {
   background-color: #f6f6f6;
-  padding: 30px 25px 30px 25px;
-  height: 250px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -248,11 +256,8 @@ footer p {
   font-weight: 200;
 }
 
-.fonctionnement {
-  padding: 30px 25px 30px 25px;
-}
 .fonctionnement__steps {
-  height: 325px;
+  height: 350px;
   padding: 25px 0px 25px 0px;
   display: flex;
   flex-direction: column;
@@ -275,7 +280,6 @@ footer p {
 }
 .steps__txt {
   position: absolute;
-  /* postulat de départ */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -285,12 +289,11 @@ footer p {
   display: inline;
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 12%;
   transform: translate(-50%, -50%);
   color: #969696;
   font-size: 20px;
   width: 80px;
-  padding-left: 10px;
 }
 .steps__number {
   background-color: #9356dc;
@@ -316,7 +319,6 @@ footer p {
 
 .restaurants {
   background-color: #f6f6f6;
-  padding: 40px 25px 40px 25px;
 }
 .restaurants__cards a {
   text-decoration: none;
@@ -389,6 +391,7 @@ footer p {
   cursor: pointer;
   font-weight: 400;
   font-size: 1.7rem;
+  box-shadow: 0px 10px 10px #bebebe;
   grid-area: btn;
 }
 .about__btn:hover {
@@ -457,6 +460,7 @@ footer p {
   cursor: pointer;
   font-weight: 400;
   font-size: 1.7rem;
+  box-shadow: 0px 10px 10px #bebebe;
   grid-area: btn;
 }
 .project__btn:hover {

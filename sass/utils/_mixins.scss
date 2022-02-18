@@ -8,6 +8,7 @@
       cursor: pointer;
       font-weight: 400;
       font-size: 1.7rem;
+      box-shadow: $shadow-button;
       &:hover {
             background: linear-gradient($colour-primary, $colour-secondary);
             color: $colour-black;
@@ -24,6 +25,10 @@
       position: relative;
       height: 265px;
       overflow: hidden;
+      &:hover {
+            transform: scale(0.98);
+            transition: 0.3s;
+      }
       img {
             object-fit: cover;
             position: absolute;

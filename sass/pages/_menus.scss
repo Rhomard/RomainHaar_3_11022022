@@ -12,22 +12,25 @@
       background-color: $colour-lightgrey;
       position: relative;
       width: 100%;
-      height: 300px;
-      border-radius: 30px;
-      top: -35px;
+      border-radius: 45px 45px 0px 0px;
+      top: -50px;
+      margin-bottom: -65px;
       i {
             font-size: 2.5rem;
       }
       &__titre {
             font-family: "Shrikhand", cursive;
-            font-size: 2.5rem;
+            font-size: 2.7rem;
+            margin-bottom: 15px;
+            padding-left: 7px;
       }
       &__favoris {
             position: absolute;
-            top: 50px;
-            right: 30px;
+            top: 35px;
+            right: 40px;
             &:hover {
                   opacity: 0%;
+                  cursor: pointer;
             }
       }
       &__favoris--hover {
@@ -35,11 +38,69 @@
             background: -webkit-linear-gradient($colour-primary, $colour-secondary);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            top: 50px;
-            right: 30px;
+            top: 35px;
+            right: 40px;
             opacity: 0%;
             &:hover {
+                  cursor: pointer;
                   opacity: 100%;
             }
       }
+}
+
+.etapes {
+      padding-top: 20px;
+      &__titre {
+            padding-left: 7px;
+            font-size: 1.7rem;
+            font-weight: 300;
+      }
+      &__trait-vert {
+            margin-left: 7px;
+            width: 37px;
+            height: 15px;
+            border-top: 3px solid $colour-ter;
+            margin-top: 5px;
+      }
+      &__plats {
+            background-color: $colour-white;
+            margin-bottom: 15px;
+            position: relative;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: $shadow;
+
+            &__titre {
+                  width: 250px;
+                  font-size: 1.7rem;
+                  font-weight: 500;
+                  padding: 15px 10px 10px 10px;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+            }
+            &__commentaire {
+                  width: 250px;
+                  font-size: 1.3rem;
+                  font-weight: 300;
+                  padding: 0px 10px 10px 10px;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+            }
+            &__prix {
+                  color: $colour-darkgrey;
+                  font-size: 1.5rem;
+                  font-weight: 500;
+                  position: absolute;
+                  bottom: 10px;
+                  right: 20px;
+            }
+      }
+}
+
+.menu-bouton {
+      display: flex;
+      justify-content: center;
+      background-color: $colour-lightgrey;
 }

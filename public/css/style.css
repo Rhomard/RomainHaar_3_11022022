@@ -19,6 +19,10 @@ section {
   padding: 50px 25px;
 }
 
+.menu {
+  padding: 35px 15px 0px 15px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: black;
@@ -63,7 +67,6 @@ footer p {
   border-radius: 100px;
   height: 50px;
   border: none;
-  width: 225px;
   cursor: pointer;
   font-weight: 400;
   font-size: 1.7rem;
@@ -72,6 +75,12 @@ footer p {
 .button:hover {
   opacity: 75%;
   transition: 0.3s;
+}
+.button--accueil {
+  width: 225px;
+}
+.button--menu {
+  width: 180px;
 }
 
 .card {
@@ -119,6 +128,7 @@ footer p {
   right: 30px;
 }
 .card__favoris:hover {
+  cursor: pointer;
   opacity: 0%;
 }
 .card__favoris--hover {
@@ -131,6 +141,7 @@ footer p {
   opacity: 0%;
 }
 .card__favoris--hover:hover {
+  cursor: pointer;
   opacity: 100%;
 }
 .card i {
@@ -166,7 +177,7 @@ footer p {
 }
 .header__arrow {
   position: absolute;
-  font-size: 2rem;
+  font-size: 2.3rem;
   left: 5%;
   color: black;
 }
@@ -380,36 +391,96 @@ footer p {
   background-color: #f6f6f6;
   position: relative;
   width: 100%;
-  height: 300px;
-  border-radius: 30px;
-  top: -35px;
+  border-radius: 45px 45px 0px 0px;
+  top: -50px;
+  margin-bottom: -65px;
 }
 .menu i {
   font-size: 2.5rem;
 }
 .menu__titre {
   font-family: "Shrikhand", cursive;
-  font-size: 2.5rem;
+  font-size: 2.7rem;
+  margin-bottom: 15px;
+  padding-left: 7px;
 }
 .menu__favoris {
   position: absolute;
-  top: 50px;
-  right: 30px;
+  top: 35px;
+  right: 40px;
 }
 .menu__favoris:hover {
   opacity: 0%;
+  cursor: pointer;
 }
 .menu__favoris--hover {
   position: absolute;
   background: -webkit-linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  top: 50px;
-  right: 30px;
+  top: 35px;
+  right: 40px;
   opacity: 0%;
 }
 .menu__favoris--hover:hover {
+  cursor: pointer;
   opacity: 100%;
+}
+
+.etapes {
+  padding-top: 20px;
+}
+.etapes__titre {
+  padding-left: 7px;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+.etapes__trait-vert {
+  margin-left: 7px;
+  width: 37px;
+  height: 15px;
+  border-top: 3px solid #99e2d0;
+  margin-top: 5px;
+}
+.etapes__plats {
+  background-color: #fff;
+  margin-bottom: 15px;
+  position: relative;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 10px 10px #eaeaea;
+}
+.etapes__plats__titre {
+  width: 250px;
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding: 15px 10px 10px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.etapes__plats__commentaire {
+  width: 250px;
+  font-size: 1.3rem;
+  font-weight: 300;
+  padding: 0px 10px 10px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.etapes__plats__prix {
+  color: #535353;
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+.menu-bouton {
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -41,9 +41,11 @@
             top: 35px;
             right: 40px;
             opacity: 0%;
+            transition-duration: 0.5s;
             &:hover {
                   cursor: pointer;
                   opacity: 100%;
+                  transition: 0.5s;
             }
       }
 }

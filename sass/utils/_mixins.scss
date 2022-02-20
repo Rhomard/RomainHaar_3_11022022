@@ -1,3 +1,41 @@
+@mixin animation-loader {
+      animation: 2s linear 0s forwards loader;
+      @keyframes loader {
+            from {
+                  opacity: 0;
+            }
+            25% {
+                  opacity: 100;
+                  transform: rotate(360deg);
+            }
+            95% {
+                  opacity: 100;
+            }
+            to {
+                  opacity: 0;
+                  z-index: -1000;
+            }
+      }
+}
+
+@mixin animation-loader-background {
+      animation: 2s linear 0s forwards loader-backgroung;
+      @keyframes loader-backgroung {
+            from {
+                  opacity: 100%;
+                  cursor: wait;
+            }
+            99% {
+                  opacity: 100%;
+                  cursor: wait;
+            }
+            to {
+                  opacity: 0%;
+                  z-index: -1000;
+            }
+      }
+}
+
 @mixin button {
       color: $colour-lightgrey;
       background: linear-gradient($colour-secondary, $colour-primary);
@@ -192,19 +230,6 @@
             }
             90% {
                   transform: translateY(+10px);
-            }
-            to {
-                  opacity: 1;
-            }
-      }
-}
-
-@mixin animation-loader {
-      animation: 2s linear 0s backwards loader;
-      @keyframes plats4 {
-            from {
-                  transform: translateY(-100px);
-                  opacity: 0;
             }
             to {
                   opacity: 1;

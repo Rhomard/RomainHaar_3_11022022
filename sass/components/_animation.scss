@@ -21,3 +21,7 @@
 .animation-loader {
       @include animation-loader;
 }
+
+.animation-loader-background {
+      @include animation-loader-background;
+}

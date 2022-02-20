@@ -260,15 +260,40 @@ footer p {
 }
 
 .animation-loader {
-  animation: 2s linear 0s backwards loader;
+  animation: 2s linear 0s forwards loader;
 }
-@keyframes plats4 {
+@keyframes loader {
   from {
-    transform: translateY(-100px);
     opacity: 0;
   }
+  25% {
+    opacity: 100;
+    transform: rotate(360deg);
+  }
+  95% {
+    opacity: 100;
+  }
   to {
-    opacity: 1;
+    opacity: 0;
+    z-index: -1000;
+  }
+}
+
+.animation-loader-background {
+  animation: 2s linear 0s forwards loader-backgroung;
+}
+@keyframes loader-backgroung {
+  from {
+    opacity: 100%;
+    cursor: wait;
+  }
+  99% {
+    opacity: 100%;
+    cursor: wait;
+  }
+  to {
+    opacity: 0%;
+    z-index: -1000;
   }
 }
 
@@ -315,6 +340,34 @@ footer p {
   padding-bottom: 30px;
 }
 
+.loader {
+  padding-top: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 350px;
+  z-index: 1000;
+}
+.loader i {
+  color: #9356dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 12rem;
+}
+
+.loader-background {
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
 .localisation {
   background: #eaeaea;
   box-shadow: inset 0px 2px 5px #bebebe;
@@ -348,6 +401,9 @@ footer p {
   font-weight: 200;
 }
 
+.fonctionnement {
+  background-color: #fff;
+}
 .fonctionnement__steps {
   height: 350px;
   padding: 25px 0px 25px 0px;

@@ -1,3 +1,19 @@
-.animation {
-      @include animation;
+.animation-etapes {
+      @include animation-etapes;
+}
+
+.animation-plats1 {
+      @include animation-plats1;
+}
+
+.animation-plats2 {
+      @include animation-plats2;
+}
+
+.animation-plats3 {
+      @include animation-plats3;
+}
+
+.animation-plats4 {
+      @include animation-plats4;
 }

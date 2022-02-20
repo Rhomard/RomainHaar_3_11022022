@@ -61,6 +61,7 @@
             padding-left: 7px;
             font-size: 1.7rem;
             font-weight: 300;
+            opacity: 0;
       }
       &__trait-vert {
             margin-left: 7px;
@@ -68,8 +69,10 @@
             height: 15px;
             border-top: 3px solid $colour-ter;
             margin-top: 5px;
+            opacity: 0;
       }
       &__plats {
+            opacity: 0;
             background-color: $colour-white;
             margin-bottom: 15px;
             position: relative;

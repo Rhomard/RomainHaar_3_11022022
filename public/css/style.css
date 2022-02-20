@@ -166,17 +166,96 @@ footer p {
   padding: 8px 10px;
 }
 
-.animation {
-  animation: element1 4s;
+.animation-etapes {
+  animation: etapes 2s forwards;
 }
-@keyframes element1 {
+@keyframes etapes {
   from {
+    transform: translateX(-100px);
     opacity: 0;
     width: 0%;
   }
+  50% {
+    width: 50%;
+  }
   to {
     opacity: 1;
-    width: 50%;
+  }
+}
+
+.animation-plats1 {
+  animation: 2s linear 0s forwards plats1;
+}
+@keyframes plats1 {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  90% {
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animation-plats2 {
+  animation: 2s linear 0.1s forwards plats2;
+}
+@keyframes plats2 {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  90% {
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animation-plats3 {
+  animation: 2s linear 0.2s forwards plats3;
+}
+@keyframes plats3 {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  90% {
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animation-plats4 {
+  animation: 2s linear 0.3s forwards plats4;
+}
+@keyframes plats4 {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  90% {
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -462,6 +541,7 @@ footer p {
   padding-left: 7px;
   font-size: 1.7rem;
   font-weight: 300;
+  opacity: 0;
 }
 .etapes__trait-vert {
   margin-left: 7px;
@@ -469,8 +549,10 @@ footer p {
   height: 15px;
   border-top: 3px solid #99e2d0;
   margin-top: 5px;
+  opacity: 0;
 }
 .etapes__plats {
+  opacity: 0;
   background-color: #fff;
   margin-bottom: 15px;
   position: relative;

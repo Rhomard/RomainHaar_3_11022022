@@ -106,16 +106,95 @@
       }
 }
 
-@mixin animation {
-      animation: element1 4s;
-      @keyframes element1 {
+@mixin animation-etapes {
+      animation: etapes 2s forwards;
+      @keyframes etapes {
             from {
+                  transform: translateX(-100px);
                   opacity: 0;
                   width: 0%;
             }
+            50% {
+                  width: 50%;
+            }
             to {
                   opacity: 1;
-                  width: 50%;
+            }
+      }
+}
+
+@mixin animation-plats1 {
+      animation: 2s linear 0s forwards plats1;
+      @keyframes plats1 {
+            from {
+                  transform: translateY(-100px);
+                  opacity: 0;
+            }
+            75% {
+                  opacity: 0;
+            }
+            90% {
+                  transform: translateY(+10px);
+            }
+            to {
+                  opacity: 1;
+            }
+      }
+}
+
+@mixin animation-plats2 {
+      animation: 2s linear 0.1s forwards plats2;
+      @keyframes plats2 {
+            from {
+                  transform: translateY(-100px);
+                  opacity: 0;
+            }
+            75% {
+                  opacity: 0;
+            }
+            90% {
+                  transform: translateY(+10px);
+            }
+            to {
+                  opacity: 1;
+            }
+      }
+}
+
+@mixin animation-plats3 {
+      animation: 2s linear 0.2s forwards plats3;
+      @keyframes plats3 {
+            from {
+                  transform: translateY(-100px);
+                  opacity: 0;
+            }
+            75% {
+                  opacity: 0;
+            }
+            90% {
+                  transform: translateY(+10px);
+            }
+            to {
+                  opacity: 1;
+            }
+      }
+}
+
+@mixin animation-plats4 {
+      animation: 2s linear 0.3s forwards plats4;
+      @keyframes plats4 {
+            from {
+                  transform: translateY(-100px);
+                  opacity: 0;
+            }
+            75% {
+                  opacity: 0;
+            }
+            90% {
+                  transform: translateY(+10px);
+            }
+            to {
+                  opacity: 1;
             }
       }
 }

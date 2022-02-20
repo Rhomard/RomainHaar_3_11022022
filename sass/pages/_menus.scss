@@ -48,6 +48,11 @@
       }
 }
 
+.all-etapes {
+      width: 345px;
+      margin: auto;
+}
+
 .etapes {
       padding-top: 20px;
       &__titre {
@@ -70,7 +75,29 @@
             border-radius: 15px;
             box-shadow: $shadow;
             cursor: pointer;
-
+            &:hover {
+                  .etapes__plats__prix {
+                        right: 95px;
+                        transition: 1s;
+                  }
+                  .etapes__plats__coche {
+                        width: 70px;
+                        opacity: 100%;
+                        transition: 1s;
+                        i {
+                              transform: rotate(360deg);
+                              transition: 1s;
+                        }
+                  }
+                  .etapes__plats__commentaire {
+                        width: 63%;
+                        transition: 1s;
+                  }
+                  .etapes__plats__titre {
+                        width: 63%;
+                        transition: 1s;
+                  }
+            }
             &__titre {
                   width: 79%;
                   font-size: 1.7rem;
@@ -79,15 +106,17 @@
                   white-space: nowrap;
                   overflow: hidden;
                   text-overflow: ellipsis;
+                  transition-duration: 0.5s;
             }
             &__commentaire {
-                  width: 74%;
-                  font-size: 1.3rem;
+                  width: 80%;
+                  font-size: 1.4rem;
                   font-weight: 300;
                   padding: 0px 10px 10px 10px;
                   white-space: nowrap;
                   overflow: hidden;
                   text-overflow: ellipsis;
+                  transition-duration: 0.5s;
             }
             &__prix {
                   color: $colour-darkgrey;
@@ -95,7 +124,23 @@
                   font-weight: 500;
                   position: absolute;
                   bottom: 10px;
-                  right: 20px;
+                  right: 25px;
+                  transition-duration: 0.5s;
+            }
+            &__coche {
+                  background-color: $colour-ter;
+                  border-radius: 0px 15px 15px 0px;
+                  color: $colour-white;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  position: absolute;
+                  top: 0px;
+                  right: 0px;
+                  width: 0px;
+                  height: 100%;
+                  opacity: 0%;
+                  transition-duration: 0.5s;
             }
       }
 }

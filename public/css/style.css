@@ -427,6 +427,11 @@ footer p {
   opacity: 100%;
 }
 
+.all-etapes {
+  width: 345px;
+  margin: auto;
+}
+
 .etapes {
   padding-top: 20px;
 }
@@ -451,6 +456,27 @@ footer p {
   box-shadow: 0px 10px 10px #eaeaea;
   cursor: pointer;
 }
+.etapes__plats:hover .etapes__plats__prix {
+  right: 95px;
+  transition: 1s;
+}
+.etapes__plats:hover .etapes__plats__coche {
+  width: 70px;
+  opacity: 100%;
+  transition: 1s;
+}
+.etapes__plats:hover .etapes__plats__coche i {
+  transform: rotate(360deg);
+  transition: 1s;
+}
+.etapes__plats:hover .etapes__plats__commentaire {
+  width: 63%;
+  transition: 1s;
+}
+.etapes__plats:hover .etapes__plats__titre {
+  width: 63%;
+  transition: 1s;
+}
 .etapes__plats__titre {
   width: 79%;
   font-size: 1.7rem;
@@ -459,15 +485,17 @@ footer p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  transition-duration: 0.5s;
 }
 .etapes__plats__commentaire {
-  width: 74%;
-  font-size: 1.3rem;
+  width: 80%;
+  font-size: 1.4rem;
   font-weight: 300;
   padding: 0px 10px 10px 10px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  transition-duration: 0.5s;
 }
 .etapes__plats__prix {
   color: #535353;
@@ -475,7 +503,23 @@ footer p {
   font-weight: 500;
   position: absolute;
   bottom: 10px;
-  right: 20px;
+  right: 25px;
+  transition-duration: 0.5s;
+}
+.etapes__plats__coche {
+  background-color: #99e2d0;
+  border-radius: 0px 15px 15px 0px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 0px;
+  height: 100%;
+  opacity: 0%;
+  transition-duration: 0.5s;
 }
 
 .menu-bouton {

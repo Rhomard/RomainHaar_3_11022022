@@ -69,9 +69,10 @@
             width: 100%;
             border-radius: 15px;
             box-shadow: $shadow;
+            cursor: pointer;
 
             &__titre {
-                  width: 250px;
+                  width: 79%;
                   font-size: 1.7rem;
                   font-weight: 500;
                   padding: 15px 10px 10px 10px;
@@ -80,7 +81,7 @@
                   text-overflow: ellipsis;
             }
             &__commentaire {
-                  width: 250px;
+                  width: 74%;
                   font-size: 1.3rem;
                   font-weight: 300;
                   padding: 0px 10px 10px 10px;

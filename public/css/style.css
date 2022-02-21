@@ -262,7 +262,7 @@ footer p {
 }
 
 .animation-loader {
-  animation: 2s linear 0s forwards loader;
+  animation: 3s linear 0s forwards loader;
 }
 @keyframes loader {
   from {
@@ -282,7 +282,7 @@ footer p {
 }
 
 .animation-loader-background {
-  animation: 2s linear 0s forwards loader-backgroung;
+  animation: 3s linear 0s forwards loader-backgroung;
 }
 @keyframes loader-backgroung {
   from {
@@ -695,7 +695,7 @@ footer p {
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .menu-all {
-    max-width: 768px;
+    width: 75%;
     margin: auto;
   }
 
@@ -720,7 +720,7 @@ footer p {
   }
 
   .all-etapes {
-    width: 738px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -733,7 +733,7 @@ footer p {
 }
 @media screen and (min-width: 992px) {
   .menu-all {
-    max-width: 992px;
+    width: 75%;
     margin: auto;
   }
 
@@ -758,7 +758,7 @@ footer p {
   }
 
   .all-etapes {
-    width: 962px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

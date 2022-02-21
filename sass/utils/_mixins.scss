@@ -1,5 +1,5 @@
 @mixin animation-loader {
-      animation: 2s linear 0s forwards loader;
+      animation: 3s linear 0s forwards loader;
       @keyframes loader {
             from {
                   opacity: 0;
@@ -19,7 +19,7 @@
 }
 
 @mixin animation-loader-background {
-      animation: 2s linear 0s forwards loader-backgroung;
+      animation: 3s linear 0s forwards loader-backgroung;
       @keyframes loader-backgroung {
             from {
                   opacity: 100%;

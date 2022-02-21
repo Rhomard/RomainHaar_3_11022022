@@ -164,7 +164,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
       .menu-all {
-            max-width: 768px;
+            width: 75%;
             margin: auto;
       }
       .background-menu {
@@ -187,7 +187,7 @@
             }
       }
       .all-etapes {
-            width: 738px;
+            width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -200,7 +200,7 @@
 
 @media screen and (min-width: 992px) {
       .menu-all {
-            max-width: 992px;
+            width: 75%;
             margin: auto;
       }
       .background-menu {
@@ -224,7 +224,7 @@
             }
       }
       .all-etapes {
-            width: 962px;
+            width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: space-between;

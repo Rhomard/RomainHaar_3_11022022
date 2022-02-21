@@ -9,12 +9,10 @@
       height: 350px;
       z-index: 1000;
       i {
-            color: $colour-primary;
             display: flex;
             justify-content: center;
             align-items: center;
             align-content: center;
-            font-size: 12rem;
       }
 }
 
@@ -52,12 +50,6 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-
-      p {
-            text-align: center;
-            font-size: 1.9rem;
-            font-weight: 200;
-      }
 }
 
 .fonctionnement {
@@ -74,12 +66,8 @@
 }
 
 .steps {
-      color: $colour-black;
       background: $colour-lightgrey;
       position: relative;
-      text-align: center;
-      font-weight: 500;
-      font-size: 1.6rem;
       height: 75px;
       border-radius: 20px;
       border: none;
@@ -99,14 +87,10 @@
             top: 50%;
             left: 12%;
             transform: translate(-50%, -50%);
-            color: $colour-icongrey;
-            font-size: 20px;
             width: 80px;
       }
       &__number {
             background-color: $colour-primary;
-            color: $colour-white;
-            font-weight: 500;
             border-radius: 20px;
             position: absolute;
             top: 50%;
@@ -120,9 +104,6 @@
       }
       &--iconpurple {
             background-color: $colour-step-purple;
-            i {
-                  color: $colour-primary;
-            }
       }
 }
 
@@ -134,10 +115,6 @@
             flex-direction: column;
             max-width: 375px;
             margin: auto;
-      }
-      &__cards a {
-            text-decoration: none;
-            color: $colour-black;
       }
 }
 

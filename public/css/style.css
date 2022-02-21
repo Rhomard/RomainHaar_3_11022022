@@ -40,12 +40,6 @@ h1 {
   text-align: center;
 }
 
-textarea {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-size: 2rem;
-}
-
 button {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
@@ -61,6 +55,81 @@ footer a {
 footer p {
   font-family: "Shrikhand", cursive;
   font-size: 2rem;
+}
+
+.loader i {
+  color: #9356dc;
+  font-size: 12rem;
+}
+
+.slogan p {
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 200;
+}
+
+.steps {
+  color: black;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.steps i {
+  color: #969696;
+  font-size: 20px;
+}
+.steps__number {
+  color: #fff;
+  font-weight: 500;
+}
+.steps--iconpurple i {
+  color: #9356dc;
+}
+
+.restaurants__cards a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu i {
+  font-size: 2.5rem;
+}
+.menu__titre {
+  font-family: "Shrikhand", cursive;
+  font-size: 2.7rem;
+}
+.menu__favoris--hover {
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.etapes__titre {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+.etapes__plats__titre {
+  font-size: 1.7rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.etapes__plats__commentaire {
+  font-size: 1.4rem;
+  font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.etapes__plats__prix {
+  color: #535353;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.etapes__plats__coche {
+  color: #fff;
 }
 
 .button {
@@ -355,12 +424,10 @@ footer p {
   z-index: 1000;
 }
 .loader i {
-  color: #9356dc;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
-  font-size: 12rem;
 }
 
 .loader-background {
@@ -398,11 +465,6 @@ footer p {
   justify-content: space-between;
   align-items: center;
 }
-.slogan p {
-  text-align: center;
-  font-size: 1.9rem;
-  font-weight: 200;
-}
 
 .fonctionnement {
   background-color: #fff;
@@ -418,12 +480,8 @@ footer p {
 }
 
 .steps {
-  color: black;
   background: #f6f6f6;
   position: relative;
-  text-align: center;
-  font-weight: 500;
-  font-size: 1.6rem;
   height: 75px;
   border-radius: 20px;
   border: none;
@@ -444,14 +502,10 @@ footer p {
   top: 50%;
   left: 12%;
   transform: translate(-50%, -50%);
-  color: #969696;
-  font-size: 20px;
   width: 80px;
 }
 .steps__number {
   background-color: #9356dc;
-  color: #fff;
-  font-weight: 500;
   border-radius: 20px;
   position: absolute;
   top: 50%;
@@ -466,9 +520,6 @@ footer p {
 .steps--iconpurple {
   background-color: #f8ebff;
 }
-.steps--iconpurple i {
-  color: #9356dc;
-}
 
 .restaurants {
   background-color: #f6f6f6;
@@ -479,10 +530,6 @@ footer p {
   flex-direction: column;
   max-width: 375px;
   margin: auto;
-}
-.restaurants__cards a {
-  text-decoration: none;
-  color: black;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -552,12 +599,7 @@ footer p {
   top: -50px;
   margin-bottom: -65px;
 }
-.menu i {
-  font-size: 2.5rem;
-}
 .menu__titre {
-  font-family: "Shrikhand", cursive;
-  font-size: 2.7rem;
   margin-bottom: 15px;
   padding-left: 7px;
 }
@@ -572,10 +614,6 @@ footer p {
 }
 .menu__favoris--hover {
   position: absolute;
-  background: -webkit-linear-gradient(#9356dc, #ff79da);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
   top: 35px;
   right: 40px;
   opacity: 0%;
@@ -597,8 +635,6 @@ footer p {
 }
 .etapes__titre {
   padding-left: 7px;
-  font-size: 1.7rem;
-  font-weight: 300;
   opacity: 0;
 }
 .etapes__trait-vert {
@@ -618,6 +654,36 @@ footer p {
   border-radius: 15px;
   box-shadow: 0px 10px 10px #eaeaea;
   cursor: pointer;
+}
+.etapes__plats__titre {
+  width: 79%;
+  padding: 15px 10px 10px 10px;
+  transition-duration: 0.5s;
+}
+.etapes__plats__commentaire {
+  width: 80%;
+  padding: 0px 10px 10px 10px;
+  transition-duration: 0.5s;
+}
+.etapes__plats__prix {
+  position: absolute;
+  bottom: 10px;
+  right: 25px;
+  transition-duration: 0.5s;
+}
+.etapes__plats__coche {
+  background-color: #99e2d0;
+  border-radius: 0px 15px 15px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 0px;
+  height: 100%;
+  opacity: 0%;
+  transition-duration: 0.5s;
 }
 .etapes__plats:hover .etapes__plats__prix {
   right: 95px;
@@ -639,50 +705,6 @@ footer p {
 .etapes__plats:hover .etapes__plats__titre {
   width: 63%;
   transition: 1s;
-}
-.etapes__plats__titre {
-  width: 79%;
-  font-size: 1.7rem;
-  font-weight: 500;
-  padding: 15px 10px 10px 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  transition-duration: 0.5s;
-}
-.etapes__plats__commentaire {
-  width: 80%;
-  font-size: 1.4rem;
-  font-weight: 300;
-  padding: 0px 10px 10px 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  transition-duration: 0.5s;
-}
-.etapes__plats__prix {
-  color: #535353;
-  font-size: 1.5rem;
-  font-weight: 500;
-  position: absolute;
-  bottom: 10px;
-  right: 25px;
-  transition-duration: 0.5s;
-}
-.etapes__plats__coche {
-  background-color: #99e2d0;
-  border-radius: 0px 15px 15px 0px;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 0px;
-  height: 100%;
-  opacity: 0%;
-  transition-duration: 0.5s;
 }
 
 .menu-bouton {
@@ -731,6 +753,14 @@ footer p {
 
   .etapes {
     width: 49%;
+  }
+  .etapes__plats:hover .etapes__plats__commentaire {
+    width: 58%;
+    transition: 1s;
+  }
+  .etapes__plats:hover .etapes__plats__titre {
+    width: 58%;
+    transition: 1s;
   }
 }
 @media screen and (min-width: 992px) {

@@ -15,12 +15,7 @@
       border-radius: 45px 45px 0px 0px;
       top: -50px;
       margin-bottom: -65px;
-      i {
-            font-size: 2.5rem;
-      }
       &__titre {
-            font-family: "Shrikhand", cursive;
-            font-size: 2.7rem;
             margin-bottom: 15px;
             padding-left: 7px;
       }
@@ -35,10 +30,6 @@
       }
       &__favoris--hover {
             position: absolute;
-            background: -webkit-linear-gradient($colour-primary, $colour-secondary);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
             top: 35px;
             right: 40px;
             opacity: 0%;
@@ -60,8 +51,6 @@
       padding-top: 20px;
       &__titre {
             padding-left: 7px;
-            font-size: 1.7rem;
-            font-weight: 300;
             opacity: 0;
       }
       &__trait-vert {
@@ -81,6 +70,36 @@
             border-radius: 15px;
             box-shadow: $shadow;
             cursor: pointer;
+            &__titre {
+                  width: 79%;
+                  padding: 15px 10px 10px 10px;
+                  transition-duration: 0.5s;
+            }
+            &__commentaire {
+                  width: 80%;
+                  padding: 0px 10px 10px 10px;
+                  transition-duration: 0.5s;
+            }
+            &__prix {
+                  position: absolute;
+                  bottom: 10px;
+                  right: 25px;
+                  transition-duration: 0.5s;
+            }
+            &__coche {
+                  background-color: $colour-ter;
+                  border-radius: 0px 15px 15px 0px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  position: absolute;
+                  top: 0px;
+                  right: 0px;
+                  width: 0px;
+                  height: 100%;
+                  opacity: 0%;
+                  transition-duration: 0.5s;
+            }
             &:hover {
                   .etapes__plats__prix {
                         right: 95px;
@@ -103,50 +122,6 @@
                         width: 63%;
                         transition: 1s;
                   }
-            }
-            &__titre {
-                  width: 79%;
-                  font-size: 1.7rem;
-                  font-weight: 500;
-                  padding: 15px 10px 10px 10px;
-                  white-space: nowrap;
-                  overflow: hidden;
-                  text-overflow: ellipsis;
-                  transition-duration: 0.5s;
-            }
-            &__commentaire {
-                  width: 80%;
-                  font-size: 1.4rem;
-                  font-weight: 300;
-                  padding: 0px 10px 10px 10px;
-                  white-space: nowrap;
-                  overflow: hidden;
-                  text-overflow: ellipsis;
-                  transition-duration: 0.5s;
-            }
-            &__prix {
-                  color: $colour-darkgrey;
-                  font-size: 1.5rem;
-                  font-weight: 500;
-                  position: absolute;
-                  bottom: 10px;
-                  right: 25px;
-                  transition-duration: 0.5s;
-            }
-            &__coche {
-                  background-color: $colour-ter;
-                  border-radius: 0px 15px 15px 0px;
-                  color: $colour-white;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  position: absolute;
-                  top: 0px;
-                  right: 0px;
-                  width: 0px;
-                  height: 100%;
-                  opacity: 0%;
-                  transition-duration: 0.5s;
             }
       }
 }
@@ -196,6 +171,18 @@
       }
       .etapes {
             width: 49%;
+            &__plats {
+                  &:hover {
+                        .etapes__plats__commentaire {
+                              width: 58%;
+                              transition: 1s;
+                        }
+                        .etapes__plats__titre {
+                              width: 58%;
+                              transition: 1s;
+                        }
+                  }
+            }
       }
 }
 

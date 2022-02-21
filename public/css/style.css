@@ -405,6 +405,8 @@ footer p {
   background-color: #fff;
 }
 .fonctionnement__steps {
+  width: 375px;
+  margin: auto;
   height: 350px;
   padding: 25px 0px 25px 0px;
   display: flex;
@@ -467,12 +469,38 @@ footer p {
 
 .restaurants {
   background-color: #f6f6f6;
+  margin: auto;
+}
+.restaurants__cards {
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
+  margin: auto;
 }
 .restaurants__cards a {
   text-decoration: none;
   color: black;
 }
 
+@media screen and (min-width: 768px) and (orientation: portrait) and (max-width: 992px) {
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .restaurants__cards {
+    max-width: 992px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .restaurants__cards a {
+    width: 48%;
+  }
+}
 .photo-menu {
   width: 100%;
   height: 250px;

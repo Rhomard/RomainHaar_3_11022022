@@ -142,6 +142,7 @@ footer p {
   position: absolute;
   background: -webkit-linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   bottom: 25px;
   right: 30px;
@@ -573,6 +574,7 @@ footer p {
   position: absolute;
   background: -webkit-linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   top: 35px;
   right: 40px;

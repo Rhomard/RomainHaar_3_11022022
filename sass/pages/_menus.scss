@@ -37,6 +37,7 @@
             position: absolute;
             background: -webkit-linear-gradient($colour-primary, $colour-secondary);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             top: 35px;
             right: 40px;

@@ -117,6 +117,7 @@
             position: absolute;
             background: -webkit-linear-gradient($colour-primary, $colour-secondary);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             bottom: 25px;
             right: 30px;

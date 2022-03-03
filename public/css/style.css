@@ -413,7 +413,7 @@ footer p {
   padding-bottom: 30px;
 }
 
-.loader {
+.body-home .loader {
   padding-top: 17px;
   display: flex;
   flex-direction: column;
@@ -424,22 +424,20 @@ footer p {
   height: 350px;
   z-index: 1000;
 }
-.loader i {
+.body-home .loader i {
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
 }
-
-.loader-background {
+.body-home .loader-background {
   position: fixed;
   background-color: #fff;
   width: 100%;
   height: 100%;
   z-index: 999;
 }
-
-.localisation {
+.body-home .localisation {
   background: #eaeaea;
   box-shadow: inset 0px 2px 5px #bebebe;
   height: 50px;
@@ -449,16 +447,15 @@ footer p {
   flex-wrap: wrap;
   width: 100%;
 }
-.localisation__pin {
+.body-home .localisation__pin {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.localisation p {
+.body-home .localisation p {
   padding-left: 10px;
 }
-
-.slogan {
+.body-home .slogan {
   background-color: #f6f6f6;
   height: 300px;
   display: flex;
@@ -466,11 +463,10 @@ footer p {
   justify-content: space-between;
   align-items: center;
 }
-
-.fonctionnement {
+.body-home .fonctionnement {
   background-color: #fff;
 }
-.fonctionnement__steps {
+.body-home .fonctionnement__steps {
   width: 339px;
   margin: auto;
   height: 350px;
@@ -479,8 +475,7 @@ footer p {
   flex-direction: column;
   justify-content: space-between;
 }
-
-.steps {
+.body-home .steps {
   background: #f6f6f6;
   position: relative;
   height: 75px;
@@ -490,14 +485,14 @@ footer p {
   margin: auto;
   width: 310px;
 }
-.steps__txt {
+.body-home .steps__txt {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
 }
-.steps i {
+.body-home .steps i {
   display: inline;
   position: absolute;
   top: 50%;
@@ -505,7 +500,7 @@ footer p {
   transform: translate(-50%, -50%);
   width: 80px;
 }
-.steps__number {
+.body-home .steps__number {
   background-color: #9356dc;
   border-radius: 20px;
   position: absolute;
@@ -518,29 +513,26 @@ footer p {
   justify-content: center;
   align-items: center;
 }
-.steps--iconpurple {
+.body-home .steps--iconpurple {
   background-color: #f8ebff;
 }
-
-.restaurants {
+.body-home .restaurants {
   background-color: #f6f6f6;
   margin: auto;
 }
-.restaurants__cards {
+.body-home .restaurants__cards {
   display: flex;
   flex-direction: column;
   max-width: 375px;
   margin: auto;
 }
-
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .fonctionnement {
+  .body-home .fonctionnement {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
-  .restaurants__cards {
+  .body-home .restaurants__cards {
     max-width: 992px;
     width: 100%;
     display: flex;
@@ -548,24 +540,22 @@ footer p {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .restaurants__cards a {
+  .body-home .restaurants__cards a {
     width: 48%;
   }
 }
 @media screen and (min-width: 992px) {
-  .fonctionnement__steps {
+  .body-home .fonctionnement__steps {
     height: 100%;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-
-  .steps {
+  .body-home .steps {
     width: 30%;
   }
-
-  .restaurants__cards {
+  .body-home .restaurants__cards {
     max-width: 1440px;
     width: 100%;
     display: flex;
@@ -573,26 +563,25 @@ footer p {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .restaurants__cards a {
+  .body-home .restaurants__cards a {
     width: 31%;
   }
-
-  footer ul {
+  .body-home footer ul {
     display: flex;
     justify-content: space-between;
   }
 }
-.photo-menu {
+
+.body-menu .photo-menu {
   width: 100%;
   height: 250px;
   overflow: hidden;
 }
-.photo-menu img {
+.body-menu .photo-menu img {
   object-fit: cover;
   width: 100%;
 }
-
-.menu {
+.body-menu .menu {
   background-color: #f6f6f6;
   position: relative;
   width: 100%;
@@ -600,45 +589,44 @@ footer p {
   top: -50px;
   margin-bottom: -65px;
 }
-.menu__titre {
+.body-menu .menu__titre {
   margin-bottom: 15px;
   padding-left: 7px;
 }
-.menu__favoris {
+.body-menu .menu__favoris {
   position: absolute;
   top: 35px;
   right: 40px;
 }
-.menu__favoris:hover {
+.body-menu .menu__favoris:hover {
   opacity: 0%;
   cursor: pointer;
 }
-.menu__favoris--hover {
+.body-menu .menu__favoris--hover {
   position: absolute;
   top: 35px;
   right: 40px;
   opacity: 0%;
   transition-duration: 0.5s;
 }
-.menu__favoris--hover:hover {
+.body-menu .menu__favoris--hover:hover {
   cursor: pointer;
   opacity: 100%;
   transition: 0.5s;
 }
-
-.all-etapes {
-  width: 345px;
+.body-menu .all-etapes {
+  max-width: 345px;
   margin: auto;
 }
-
-.etapes {
+.body-menu .etapes {
+  width: 100%;
   padding-top: 20px;
 }
-.etapes__titre {
+.body-menu .etapes__titre {
   padding-left: 7px;
   opacity: 0;
 }
-.etapes__trait-vert {
+.body-menu .etapes__trait-vert {
   margin-left: 7px;
   width: 37px;
   height: 15px;
@@ -646,7 +634,7 @@ footer p {
   margin-top: 5px;
   opacity: 0;
 }
-.etapes__plats {
+.body-menu .etapes__plats {
   opacity: 0;
   background-color: #fff;
   margin-bottom: 15px;
@@ -656,23 +644,23 @@ footer p {
   box-shadow: 0px 10px 10px #eaeaea;
   cursor: pointer;
 }
-.etapes__plats__titre {
+.body-menu .etapes__plats__titre {
   width: 79%;
   padding: 15px 10px 10px 10px;
   transition-duration: 0.5s;
 }
-.etapes__plats__commentaire {
+.body-menu .etapes__plats__commentaire {
   width: 80%;
   padding: 0px 10px 10px 10px;
   transition-duration: 0.5s;
 }
-.etapes__plats__prix {
+.body-menu .etapes__plats__prix {
   position: absolute;
   bottom: 10px;
   right: 25px;
   transition-duration: 0.5s;
 }
-.etapes__plats__coche {
+.body-menu .etapes__plats__coche {
   background-color: #99e2d0;
   border-radius: 0px 15px 15px 0px;
   display: flex;
@@ -686,51 +674,47 @@ footer p {
   opacity: 0%;
   transition-duration: 0.5s;
 }
-.etapes__plats:hover .etapes__plats__prix {
+.body-menu .etapes__plats:hover .etapes__plats__prix {
   right: 95px;
   transition: 1s;
 }
-.etapes__plats:hover .etapes__plats__coche {
+.body-menu .etapes__plats:hover .etapes__plats__coche {
   width: 70px;
   opacity: 100%;
   transition: 1s;
 }
-.etapes__plats:hover .etapes__plats__coche i {
+.body-menu .etapes__plats:hover .etapes__plats__coche i {
   transform: rotate(360deg);
   transition: 1s;
 }
-.etapes__plats:hover .etapes__plats__commentaire {
+.body-menu .etapes__plats:hover .etapes__plats__commentaire {
   width: 63%;
   transition: 1s;
 }
-.etapes__plats:hover .etapes__plats__titre {
+.body-menu .etapes__plats:hover .etapes__plats__titre {
   width: 63%;
   transition: 1s;
 }
-
-.menu-bouton {
+.body-menu .menu-bouton {
   padding: 50px 25px;
   display: flex;
   justify-content: center;
   background-color: #f6f6f6;
 }
-
-.background-menu__background {
+.body-menu .background-menu__background {
   display: none;
 }
-
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .menu-all {
+  .body-menu .menu-all {
     width: 75%;
     margin: auto;
   }
-
-  .background-menu {
+  .body-menu .background-menu {
     position: relative;
     max-width: 992px;
     height: 100%;
   }
-  .background-menu__background {
+  .body-menu .background-menu__background {
     overflow: hidden;
     display: block;
     z-index: -1;
@@ -740,43 +724,41 @@ footer p {
     filter: blur(10px);
     opacity: 40%;
   }
-  .background-menu__background img {
+  .body-menu .background-menu__background img {
     top: 0px;
     width: 100%;
   }
-
-  .all-etapes {
+  .body-menu .all-etapes {
+    max-width: none;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-
-  .etapes {
+  .body-menu .etapes {
     width: 49%;
   }
-  .etapes__plats:hover .etapes__plats__commentaire {
+  .body-menu .etapes__plats:hover .etapes__plats__commentaire {
     width: 58%;
     transition: 1s;
   }
-  .etapes__plats:hover .etapes__plats__titre {
+  .body-menu .etapes__plats:hover .etapes__plats__titre {
     width: 58%;
     transition: 1s;
   }
 }
 @media screen and (min-width: 992px) {
-  .menu-all {
+  .body-menu .menu-all {
     width: 75%;
     margin: auto;
   }
-
-  .background-menu {
+  .body-menu .background-menu {
     position: relative;
     max-width: 1440px;
     height: 100%;
   }
-  .background-menu__background {
+  .body-menu .background-menu__background {
     overflow: hidden;
     display: block;
     z-index: -1;
@@ -786,20 +768,19 @@ footer p {
     filter: blur(10px);
     opacity: 40%;
   }
-  .background-menu__background img {
+  .body-menu .background-menu__background img {
     top: 0px;
     width: 100%;
   }
-
-  .all-etapes {
+  .body-menu .all-etapes {
+    max-width: none;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-
-  .etapes {
+  .body-menu .etapes {
     width: 32%;
   }
 }

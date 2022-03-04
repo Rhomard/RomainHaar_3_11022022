@@ -341,12 +341,12 @@ footer p {
   }
   25% {
     opacity: 100;
-    transform: rotate(360deg);
   }
   95% {
     opacity: 100;
   }
   to {
+    transform: rotate(360deg);
     opacity: 0;
     z-index: -1000;
   }
@@ -424,11 +424,8 @@ footer p {
   height: 350px;
   z-index: 1000;
 }
-.body-home .loader i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+.body-home .loader img {
+  width: 120px;
 }
 .body-home .loader-background {
   position: fixed;
